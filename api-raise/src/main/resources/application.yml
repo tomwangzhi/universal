@@ -1,0 +1,51 @@
+server:
+  port: 5004
+spring:
+  application:
+    name: api-raise
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.11.207:3308/universal_raise?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-test-query: SELECT 1
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 2
+  zipkin:
+    base-url: http://localhost:9000
+    enabled: true
+    sender:
+      type: web
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://192.168.11.16:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+ribbon:                                                                    # 定义ribbon负载均衡策略
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+  MaxAutoRetriesNextServer: 0
+tm:                                                                        # 定义事务协调器地址
+  manager:
+    url: http://localhost:8899/tx/manager/
+logging:                                                                  # 定义 LCN 日志级别
+  level:
+    com:
+      codingapi: debug
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
+feign:
+  hystrix:
+    enabled: true

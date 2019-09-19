@@ -1,0 +1,49 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: api-user
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.11.207:3308/cloud_user?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-test-query: SELECT 1
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  zipkin:
+    base-url: http://localhost:9000
+    enabled: true
+    sender:
+      type: web
+  sleuth:                                                          # sleuth采集率开发环境置为百分之百
+    sampler:                                                       # 生产环境需减少阈值
+      probability: 1.0
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://192.168.11.16:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
+feign:
+  hystrix:
+    enabled: true
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://127.0.0.1:5002/user-me
+      prefer-token-info: false
+      #token-info-uri: http://127.0.0.1:5002/oauth/check_token

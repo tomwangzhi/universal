@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-Eureka/api-Eureka.iml" filepath="$PROJECT_DIR$/api-Eureka/api-Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-common/api-common.iml" filepath="$PROJECT_DIR$/api-common/api-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-model/api-model.iml" filepath="$PROJECT_DIR$/api-model/api-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-oauth/api-oauth.iml" filepath="$PROJECT_DIR$/api-oauth/api-oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-raise/api-raise.iml" filepath="$PROJECT_DIR$/api-raise/api-raise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-ticket/api-ticket.iml" filepath="$PROJECT_DIR$/api-ticket/api-ticket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-user/api-user.iml" filepath="$PROJECT_DIR$/api-user/api-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-zipkin/api-zipkin.iml" filepath="$PROJECT_DIR$/api-zipkin/api-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-zuul/api-zuul.iml" filepath="$PROJECT_DIR$/api-zuul/api-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elastic-job/elastic-job.iml" filepath="$PROJECT_DIR$/elastic-job/elastic-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transaction-springcloud/transaction-springcloud.iml" filepath="$PROJECT_DIR$/transaction-springcloud/transaction-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tx-manager/tx-manager.iml" filepath="$PROJECT_DIR$/tx-manager/tx-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/universal.iml" filepath="$PROJECT_DIR$/universal.iml" />
+    </modules>
+  </component>
+</project>

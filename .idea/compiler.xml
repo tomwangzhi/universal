@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-common" />
+        <module name="api-Eureka" />
+        <module name="api-model" />
+        <module name="api-oauth" />
+        <module name="api-raise" />
+        <module name="api-ticket" />
+        <module name="api-user" />
+        <module name="api-zipkin" />
+        <module name="api-zuul" />
+        <module name="elastic-job" />
+        <module name="transaction-springcloud" />
+        <module name="tx-manager" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-common" target="1.8" />
+      <module name="api-Eureka" target="1.8" />
+      <module name="api-model" target="1.8" />
+      <module name="api-oauth" target="1.8" />
+      <module name="api-raise" target="1.8" />
+      <module name="api-ticket" target="1.8" />
+      <module name="api-user" target="1.8" />
+      <module name="api-zipkin" target="1.8" />
+      <module name="api-zuul" target="1.8" />
+      <module name="elastic-job" target="1.8" />
+      <module name="transaction-springcloud" target="1.8" />
+      <module name="tx-manager" target="1.8" />
+      <module name="universal" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

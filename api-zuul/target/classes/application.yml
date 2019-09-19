@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: api-zuul
+  zipkin:
+    base-url: http://localhost:9000
+    enabled: true
+    sender:
+      type: web
+  sleuth:                                                          # sleuth采集率开发环境置为百分之百
+    sampler:                                                       # 生产环境需减少阈值
+      probability: 1.0
+server:
+  port: 5000
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://192.168.11.16:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+zuul:
+  routes:
+    user:
+      path: /user/**
+      serviceId: api-user
+    oauth:
+      path: /oauth/**
+      serviceId: api-oauth
+    ticket:
+      path: /ticket/**
+      serviceId: api-ticket
+    raise:
+      path: /raise/**
+      serviceId: api-raise
+  host:
+    socket-timeout-millis: 10000
+    connect-timeout-millis: 10000
+  add-proxy-headers: true
+  ignored-services: '*'
+  sensitive-headers:
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 6000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE                             # 网关层设置信号量机制 避免多流量产生额外线程开销
+          thread:
+            timeoutInMilliseconds: 7000

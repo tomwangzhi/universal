@@ -1,0 +1,16 @@
+
+ksquid:S33052"TInject this field value directly into "clientDetails", the only method that uses it.(â–ŠĞ
+‰squid:UselessImportCheck"`Remove this unused import 'org.springframework.security.oauth2.common.DefaultOAuth2AccessToken'.(”ú©Âüÿÿÿÿ
+Wsquid:UselessImportCheck&".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
+squid:UselessImportCheck"eRemove this unused import 'org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint'.(›«Ö•ÿÿÿÿÿ
+}squid:UselessImportCheck"YRemove this unused import 'org.springframework.security.oauth2.common.OAuth2AccessToken'.(Ûşù®
+‚squid:UselessImportCheck"^Remove this unused import 'org.springframework.security.oauth2.provider.OAuth2Authentication'.(òõÃà
+”squid:UselessImportCheck"kRemove this unused import 'org.springframework.security.oauth2.provider.token.DefaultAccessTokenConverter'.(Œåéıÿÿÿÿ
+Ssquid:UselessImportCheck'"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ
+zsquid:UselessImportCheck"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥
+ksquid:UselessImportCheck"GRemove this unused import 'com.universal.service.impl.UserServiceImpl'.(ç¨‹
+€squid:UselessImportCheck"WRemove this unused import 'org.springframework.security.oauth2.provider.OAuth2Request'.(ĞéáÄøÿÿÿÿ
+”squid:UselessImportCheck#"kRemove this unused import 'org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore'.(‚…«Ãøÿÿÿÿ
+qsquid:UselessImportCheck"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“
+†squid:UselessImportCheck!"]Remove this unused import 'org.springframework.security.oauth2.provider.token.TokenEnhancer'.(£šÖ°şÿÿÿÿ
+€squid:UselessImportCheck"WRemove this unused import 'org.springframework.security.core.authority.AuthorityUtils'.(¬«àõÿÿÿÿÿ

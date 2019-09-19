@@ -1,0 +1,11 @@
+
+qsquid:S2293Ì"YReplace the type specification in this constructor call with the diamond operator ("<>").(îπ◊
+qsquid:S2293Ç"YReplace the type specification in this constructor call with the diamond operator ("<>").(îπ◊
+ssquid:S1488}"\Immediately return this expression instead of assigning it to the temporary variable "auth".(—¨â‰
+tsquid:S1488ä"\Immediately return this expression instead of assigning it to the temporary variable "auth".(—¨â‰
+{squid:S1488ﬂ"cImmediately return this expression instead of assigning it to the temporary variable "accessToken".(¥”∂¿
+|squid:S1488™"dImmediately return this expression instead of assigning it to the temporary variable "refreshToken".(ıÉÏù
+4squid:S2153π"Remove the boxing to "Long".(ﬁßç˛
+4squid:S2153î"Remove the boxing to "Long".(ﬁßç˛
+Vsquid:S1155Í">Use isEmpty() to check whether the collection is empty or not.(ÿ‘Õù
+Vsquid:S1155ˇ">Use isEmpty() to check whether the collection is empty or not.(ÿ‘Õù

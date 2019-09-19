@@ -1,0 +1,15 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  server:
+    eviction-interval-timer-in-ms: 5000             # 扫描失效服务间隔
+    enable-self-preservation: false                 # 关闭自我保护机制

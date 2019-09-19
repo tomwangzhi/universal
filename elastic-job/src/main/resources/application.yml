@@ -1,0 +1,19 @@
+spring:
+  port: 8766
+  application:
+    name: scheduler-service
+  datasource:
+       url: jdbc:mysql://47.97.170.155:3306/test?characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false&requireSSL=false
+       driver-class-name: com.mysql.jdbc.Driver
+       username: admin
+       password: admin
+       type: com.zaxxer.hikari.HikariDataSource
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    
+regCenter:
+  serverList: localhost:2181           # 注册中心地址
+  namespace: elastic-job-lite          # 命名空间
+
+
